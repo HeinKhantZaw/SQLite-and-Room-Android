@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E0E5Ec"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="RoomDB Assignment"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="64dp"
+        android:background="#E0E5Ec"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+    <com.github.sshadkany.shapes.CircleView
+        android:id="@+id/btnAdd"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:shape_circle_backgroundColor="#ECF0F3"
+        app:shape_circle_shadow_type="drop_shadow">
+
+        <com.github.sshadkany.neoText
+            android:id="@+id/plusNeoText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtEventTitle"
+            app:neo_radius="3dp"
+            app:neo_light_color="#E0E5Ec"
+            app:neo_dark_color="@color/textColorDark"
+            app:neo_shadow_type="small_inner_shadow">
+
+            <TextView
+                android:id="@+id/plusIcon"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:fontFamily="sans-serif-black"
+                android:text="+"
+                android:textSize="70sp" />
+
+        </com.github.sshadkany.neoText>
+    </com.github.sshadkany.shapes.CircleView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

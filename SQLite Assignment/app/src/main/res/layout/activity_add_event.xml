@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E0E5EC"
+    android:orientation="vertical"
+    tools:context=".AddEventActivity">
+
+    <com.github.sshadkany.neoText
+        android:id="@+id/neotext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtEventTitle"
+        app:neo_dark_color="@color/textColorDark"
+        app:neo_radius="3dp"
+        app:neo_shadow_type="drop_shadow">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:fontFamily="sans-serif-black"
+            android:text="ADD EVENT"
+            android:textSize="50sp" />
+
+    </com.github.sshadkany.neoText>
+
+    <com.github.sshadkany.shapes.RoundRectView
+        android:id="@+id/circle_text_button"
+        android:layout_width="350dp"
+        android:layout_height="130dp"
+        android:layout_gravity="center"
+        app:shape_roundRect_bottomLeftRadius="40dp"
+        app:shape_roundRect_bottomRightRadius="40dp"
+        app:shape_roundRect_light_color="#FFF"
+        app:shape_roundRect_shadow_position_x="0dp"
+        app:shape_roundRect_shadow_position_y="10dp"
+        app:shape_roundRect_shadow_type="small_inner_shadow"
+        app:shape_roundRect_topLeftRadius="40dp"
+        app:shape_roundRect_topRightRadius="40dp">
+
+
+        <EditText
+            android:id="@+id/edtEventName"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@android:color/transparent"
+            android:hint="Name"
+            android:textColor="@color/textColorDark"
+            android:textColorHint="@color/textColorLight"
+            android:textCursorDrawable="@drawable/cursor_color"
+            android:textSize="20sp" />
+    </com.github.sshadkany.shapes.RoundRectView>
+
+    <com.github.sshadkany.shapes.RoundRectView
+        android:id="@+id/circle_text_button1"
+        android:layout_width="350dp"
+        android:layout_height="170dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="-50dp"
+        app:shape_roundRect_bottomLeftRadius="40dp"
+        app:shape_roundRect_bottomRightRadius="40dp"
+        app:shape_roundRect_light_color="#FFF"
+        app:shape_roundRect_shadow_position_x="0dp"
+        app:shape_roundRect_shadow_position_y="10dp"
+        app:shape_roundRect_shadow_type="small_inner_shadow"
+        app:shape_roundRect_topLeftRadius="40dp"
+        app:shape_roundRect_topRightRadius="40dp">
+
+        <com.vivekkaushik.datepicker.DatePickerTimeline
+            android:id="@+id/datePickerTimeline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <!--        <EditText-->
+        <!--            android:id="@+id/edtEventDate"-->
+        <!--            android:layout_width="260dp"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_gravity="center"-->
+        <!--            android:background="@android:color/transparent"-->
+        <!--            android:hint="Date"-->
+        <!--            android:textColor="@color/textColorDark"-->
+        <!--            android:textColorHint="@color/textColorLight"-->
+        <!--            android:textCursorDrawable="@drawable/cursor_color"-->
+        <!--            android:textSize="20sp" />-->
+    </com.github.sshadkany.shapes.RoundRectView>
+
+    <com.github.sshadkany.shapes.RoundRectView
+        android:id="@+id/circle_text_button2"
+        android:layout_width="350dp"
+        android:layout_height="130dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="-50dp"
+        app:shape_roundRect_bottomLeftRadius="40dp"
+        app:shape_roundRect_bottomRightRadius="40dp"
+        app:shape_roundRect_light_color="#FFF"
+        app:shape_roundRect_shadow_position_x="0dp"
+        app:shape_roundRect_shadow_position_y="10dp"
+        app:shape_roundRect_shadow_type="small_inner_shadow"
+        app:shape_roundRect_topLeftRadius="40dp"
+        app:shape_roundRect_topRightRadius="40dp">
+
+
+        <EditText
+            android:id="@+id/edtEventLocation"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@android:color/transparent"
+            android:hint="Location"
+            android:textColor="@color/textColorDark"
+            android:textColorHint="@color/textColorLight"
+            android:textCursorDrawable="@drawable/cursor_color"
+            android:textSize="20sp" />
+    </com.github.sshadkany.shapes.RoundRectView>
+
+    <com.github.sshadkany.shapes.RoundRectView
+        android:id="@+id/circle_text_button3"
+        android:layout_width="350dp"
+        android:layout_height="130dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="-50dp"
+        app:shape_roundRect_bottomLeftRadius="40dp"
+        app:shape_roundRect_bottomRightRadius="40dp"
+        app:shape_roundRect_light_color="#FFF"
+        app:shape_roundRect_shadow_position_x="0dp"
+        app:shape_roundRect_shadow_position_y="10dp"
+        app:shape_roundRect_shadow_type="small_inner_shadow"
+        app:shape_roundRect_topLeftRadius="40dp"
+        app:shape_roundRect_topRightRadius="40dp">
+
+
+        <EditText
+            android:id="@+id/edtEventDesc"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@android:color/transparent"
+            android:hint="Description"
+            android:textColor="@color/textColorDark"
+            android:textColorHint="@color/textColorLight"
+            android:textCursorDrawable="@drawable/cursor_color"
+            android:textSize="20sp" />
+    </com.github.sshadkany.shapes.RoundRectView>
+
+    <com.github.sshadkany.shapes.RoundRectView
+        android:id="@+id/btnAdd"
+        android:layout_width="290dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center"
+        app:shape_roundRect_bottomLeftRadius="70dp"
+        app:shape_roundRect_bottomRightRadius="70dp"
+        app:shape_roundRect_shadow_type="drop_shadow"
+        app:shape_roundRect_topLeftRadius="70dp"
+        app:shape_roundRect_topRightRadius="70dp">
+
+        <TextView
+            android:id="@+id/txtAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Add Event"
+            android:textColor="#41536C"
+            android:textSize="20sp" />
+    </com.github.sshadkany.shapes.RoundRectView>
+</LinearLayout>

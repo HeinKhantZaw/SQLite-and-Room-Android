@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.github.sshadkany.shapes.RoundRectView
+        android:id="@+id/itemCard"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        app:shape_roundRect_bottomLeftRadius="12dp"
+        app:shape_roundRect_bottomRightRadius="12dp"
+        app:shape_roundRect_shadow_type="drop_shadow"
+        app:shape_roundRect_topLeftRadius="12dp"
+        app:shape_roundRect_topRightRadius="12dp">
+
+        <com.github.sshadkany.shapes.RoundRectView
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_margin="5dp"
+            app:shape_roundRect_backgroundColor="#ECF0F3"
+            app:shape_roundRect_bottomLeftRadius="12dp"
+            app:shape_roundRect_bottomRightRadius="12dp"
+            app:shape_roundRect_shadow_type="small_inner_shadow"
+            app:shape_roundRect_topLeftRadius="12dp"
+            app:shape_roundRect_topRightRadius="12dp">
+
+            <com.github.sshadkany.shapes.RoundRectView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_margin="15dp"
+                app:shape_roundRect_backgroundColor="#ECF0F3"
+                app:shape_roundRect_bottomLeftRadius="12dp"
+                app:shape_roundRect_bottomRightRadius="12dp"
+                app:shape_roundRect_shadow_type="drop_shadow"
+                app:shape_roundRect_topLeftRadius="12dp"
+                app:shape_roundRect_topRightRadius="12dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="300dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginRight="8dp">
+
+                    <TextView
+                        android:id="@+id/txtEventID"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/averia_gruesa_libre"
+                        android:text="ID"
+                        android:textSize="19sp"
+                        android:textStyle="bold"
+                        android:visibility="invisible"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/txtEventTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:fontFamily="@font/averia_gruesa_libre"
+                        android:text="Hein Khant Zaw"
+                        android:textSize="19sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="24dp"
+                        android:src="@drawable/ic_baseline_date_range_24"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/txtEventTitle" />
+
+                    <TextView
+                        android:id="@+id/txtEventDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="4dp"
+                        android:fontFamily="@font/averia_gruesa_libre"
+                        android:text="12/12/2021"
+                        android:textSize="19sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/imageView3"
+                        app:layout_constraintTop_toBottomOf="@+id/txtEventTitle" />
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginEnd="4dp"
+                        android:src="@drawable/ic_baseline_location_on_24"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/txtEventLocation"
+                        app:layout_constraintTop_toBottomOf="@+id/txtEventTitle" />
+
+                    <TextView
+                        android:id="@+id/txtEventLocation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginEnd="24dp"
+                        android:fontFamily="@font/averia_gruesa_libre"
+                        android:text="Yangon"
+                        android:textSize="19sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/txtEventTitle" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </com.github.sshadkany.shapes.RoundRectView>
+
+        </com.github.sshadkany.shapes.RoundRectView>
+
+        <TextView
+            android:id="@+id/txtEventDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_margin="60dp"
+            android:fontFamily="@font/averia_gruesa_libre"
+            android:text="Description lodskfkjahriu fhduf haioh ifuohdi hfiu if dif"
+            android:textSize="20sp"
+            android:translationZ="90dp" />
+    </com.github.sshadkany.shapes.RoundRectView>
+</LinearLayout>
